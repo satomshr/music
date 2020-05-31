@@ -10,12 +10,12 @@
 #define US_ECHO 8
 #define SPEAKER_PIN 5
 
-#define C0_LEN 30 // cm
-#define C1_LEN 60 // cm
+#define C0_LEN 40 // cm
+#define C1_LEN 70 // cm
 #define FAR_LEN 100 // cm
 #define C0_HZ 440 // Hz
 
-#define DELAY_MSEC 100 // ms
+#define DELAY_MSEC 30 // ms
 
 #define MY_DEBUG 1
 
@@ -48,7 +48,7 @@ void loop() {
       Serial.print("Hz");
       Serial.println();
     }
-    if(++loop_count == 10){
+    if(++loop_count == (int)(1000 / DELAY_MSEC)){
       loop_count = 0;
     }
   #endif
