@@ -1,4 +1,4 @@
-// musical_inst00.ino ; Arduino file of musical instruments using ultrasonic sensor
+// musical_inst01.ino ; Arduino file of musical instruments using ultrasonic sensor
 // author ; sato.mshr@gmail.com
 
 #include "hcsr04.h"
